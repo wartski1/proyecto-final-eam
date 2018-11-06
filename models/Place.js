@@ -4,9 +4,18 @@ let Schema = moongoose.Schema;
 let PlaceSchema = Schema({
     name: {
         type: String,
-        required: true
+        require: true
     },
-    description: String
-});
+    description: {
+        type: String,
+        require: true
+    },
+    location: {
+        type: String,
+        require: true
+    }
+}, {
+        versionKey: false
+    });
 
 module.exports = moongoose.model('Place', PlaceSchema);

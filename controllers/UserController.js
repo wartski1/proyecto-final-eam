@@ -20,7 +20,7 @@ let UserController = {
             res.json(doc)
         }).catch(err => {
             res.json(err)
-        })
+        }) 
     }
 } 
 
