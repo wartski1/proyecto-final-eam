@@ -6,9 +6,9 @@ let UserSchema = Schema({
         type: String,
         require: true
     },
-    mail: {
+    email: {
         type: String,
-        require: false
+        require: true
     },
     password: {
         type: String,

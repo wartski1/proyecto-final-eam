@@ -13,4 +13,5 @@ router.delete('/places/:id', PlaceController.destroy);
 
 router.post('/users', UserController.store);
 router.get('/users/:id', UserController.find);
+
 module.exports = router;
